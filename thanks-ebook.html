@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Thank you | LetsgetEXPORT</title>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','906709525742872');
+fbq('track','PageView');
+(function(){
+  try{
+    var q=location.search||'', ref=document.referrer||'';
+    var m=q.match(/[?&](?:razorpay_payment_id|payment_id)=([^&]+)/);
+    var fromRzp=/razorpay|rzp\.io/i.test(ref);
+    if(!m&&!fromRzp)return;               // direct visit or refresh from elsewhere: do not count
+    var id=m?m[1]:'';
+    var key='lge_purchase_sent'+(id?'_'+id:'');
+    try{if(localStorage.getItem(key))return;}catch(e){}
+    fbq('track','Purchase',{value:989,currency:'INR'},id?{eventID:id}:undefined);
+    try{localStorage.setItem(key,'1');}catch(e){}
+  }catch(e){}
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=906709525742872&ev=PageView&noscript=1"/></noscript>
+<style>
+:root{--navy:#0B2A4A;--saffron:#FF9933;--cream:#FBF8F2;--ink:#14202E;--green:#138808}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Source Sans 3",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--cream);color:var(--ink);min-height:100vh;display:flex;flex-direction:column}
+.bar{height:8px;background:linear-gradient(90deg,#FF9933 33%,#FBF8F2 33% 66%,#138808 66%)}
+header{background:var(--navy);padding:18px 20px;text-align:center;color:#fff;font-weight:800;font-size:22px;font-family:system-ui,sans-serif}
+header i{font-style:normal;color:var(--saffron)}
+main{flex:1;max-width:620px;width:100%;margin:0 auto;padding:40px 20px;text-align:center}
+.tick{width:72px;height:72px;border-radius:50%;background:var(--green);color:#fff;font-size:40px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+h1{font-size:32px;line-height:1.15;color:var(--navy);margin-bottom:10px}
+p{font-size:18px;line-height:1.5;color:#3a4756;margin-bottom:14px}
+.btn{display:inline-block;background:var(--saffron);color:var(--navy);font-weight:800;font-size:20px;padding:16px 30px;border-radius:12px;text-decoration:none;margin:14px 0 20px;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.box{background:#fff;border:1px solid #E4DCCB;border-radius:14px;padding:18px;text-align:left;margin-top:18px}
+.box b{color:var(--navy)}
+footer{text-align:center;font-size:14px;color:#7A8794;padding:20px}
+</style></head><body>
+<div class="bar"></div>
+<header>Letsget<i>EXPORT</i></header>
+<main>
+<div class="tick">✓</div>
+<h1>Thank you. Your payment was successful.</h1>
+<p>Your ebook, <b>Export From India: The Complete A-to-Z Guide for First-Time Exporters</b>, is ready to download.</p>
+<a class="btn" href="https://drive.google.com/file/d/1wEfL8bmog4_DFXvd1MWHoRxsm-jKHy8Z/view?usp=drive_link" target="_blank" rel="noopener">Download your ebook</a>
+<div class="box">
+<p><b>Tip:</b> Save the PDF to your phone or computer so you always have it.</p>
+<p style="margin:0"><b>Need help?</b> Email us at <a href="mailto:letsgetexport@gmail.com">letsgetexport@gmail.com</a> or message <b>@letsgetexport</b> on Instagram.</p>
+</div>
+</main>
+<footer>© LetsgetEXPORT</footer>
+</body></html>
